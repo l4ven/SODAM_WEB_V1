@@ -4,7 +4,7 @@ import style from "./style.module.css";
 
 const NavLogin = () => {
   return (
-    <Link to="/userLogin" className={style.navLogin}>
+    <Link to="/login" className={style.navLogin}>
       <FaUser className={style.userLogo} />
       로그인
     </Link>

@@ -1,0 +1,86 @@
+.mainContainer {
+    width: 100%;
+    height: 100vh;
+    background-color: #F3FCF3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainContent {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 150px;
+}
+
+.logo {
+    width: 180px;
+    margin-top: 15px;
+}
+
+.signUpContainer {
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.userBtn {
+    width: 160px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: #1FAD1F;
+    color: #fff;
+    cursor: pointer;
+    transition: ease-in 0.25s background;
+}
+
+.userBtn:hover {
+    background-color: #5BD75B;
+}
+
+.sellerBtn {
+    width: 160px;
+    height: 40px;
+    border: 1px solid #1FAD1F;
+    background: none;
+    border-radius: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: ease-in 0.25s box-shadow;
+}
+
+.sellerBtn:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.veg {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.veg {
+    display: block;
+    transition: transform 1s ease-in-out;
+    animation: float 1.5s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
