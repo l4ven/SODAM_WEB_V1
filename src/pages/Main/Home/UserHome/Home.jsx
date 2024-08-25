@@ -43,7 +43,7 @@ const Home = () => {
               ))}
             </div>
             <div className={style.postGrid}>
-              {filteredPosts.reverse().map((post) => (
+              {filteredPosts.map((post) => (
                 <Post
                   key={post.id}
                   id={post.id}

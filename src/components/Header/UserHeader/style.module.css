@@ -10,6 +10,10 @@
     justify-content: space-between;
 }
 
+.logoPng {
+    width: 100px;
+}
+
 .logo>h2 {
     margin-left: 40px;
 }

@@ -24,6 +24,14 @@ const SignUp = () => {
             />
           </div>
           <div>
+            <p>이메일</p>
+            <input
+              type="email"
+              placeholder="이메일"
+              className={style.inputField}
+            />
+          </div>
+          <div>
             <p>사업자등록번호</p>
             <input
               type="text"

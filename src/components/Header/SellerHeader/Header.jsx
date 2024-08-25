@@ -12,7 +12,7 @@ const Header = () => {
     <header className={style.header}>
       <nav>
         <Link to="/" className={style.logo}>
-          <img src={Logo} alt="소담 로고" />
+          <img src={Logo} alt="소담 로고" className={style.logoPng} />
         </Link>
       </nav>
       <div className={style.searchContainer}>
