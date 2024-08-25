@@ -1,0 +1,22 @@
+.navUser {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background {
+    width: 30px;
+    height: 30px;
+    background-color: #eee;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.userLogo {
+    display: inline-block;
+    color: #000;
+    width: 18px;
+    height: 18px;
+}
