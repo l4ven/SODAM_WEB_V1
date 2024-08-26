@@ -71,3 +71,7 @@ h1 {
     color: #000;
     margin-top: 20px;
 }
+
+.linkSignUp:hover {
+    border-bottom: 1px solid #000;
+}

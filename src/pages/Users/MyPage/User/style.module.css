@@ -1,0 +1,21 @@
+.myPageContainer {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    display: flex;
+}
+
+.myPageContainer>Aside {
+    flex: 0 0 250px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainContent {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    overflow: auto;
+}

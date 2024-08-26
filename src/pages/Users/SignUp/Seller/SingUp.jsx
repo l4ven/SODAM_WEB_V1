@@ -34,7 +34,7 @@ const SignUp = () => {
           <div>
             <p>사업자등록번호</p>
             <input
-              type="text"
+              type="password"
               placeholder="사업자등록번호"
               className={style.inputField}
             />
@@ -42,7 +42,7 @@ const SignUp = () => {
           <div>
             <p>통신판매업신고번호</p>
             <input
-              type="text"
+              type="password"
               placeholder="통신판매업신고번호"
               className={style.inputField}
             />
@@ -56,10 +56,18 @@ const SignUp = () => {
             />
           </div>
           <div>
-            <p>사업장 주소</p>
+            <p>농장 주소</p>
             <input
               type="text"
-              placeholder="사업장 주소"
+              placeholder="농장 주소"
+              className={style.inputField}
+            />
+          </div>
+          <div>
+            <p>농장명</p>
+            <input
+              type="text"
+              placeholder="농장명"
               className={style.inputField}
             />
           </div>
