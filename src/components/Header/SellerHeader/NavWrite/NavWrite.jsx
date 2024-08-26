@@ -4,7 +4,7 @@ import style from "./style.module.css";
 
 const NavWrite = () => {
   return (
-    <Link to="/" className={style.navSell}>
+    <Link to="/write" className={style.navSell}>
       <div className={style.background}>
         <LuPencilLine className={style.sellLogo} />
       </div>

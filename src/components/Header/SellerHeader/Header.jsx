@@ -1,17 +1,15 @@
 import style from "./style.module.css";
 import { Link } from "react-router-dom";
 import { CiSearch } from "react-icons/ci";
-import NavLogin from "./NavLogin/NavLogin";
-import NavShopping from "./UserHeader/NavShopping/NavShopping";
-import NavUser from "./UserHeader/NavUser/NavUser";
-import NavWrite from "./SellerHeader/NavWrite/NavWrite";
-import Logo from "../../assets/logo.png";
+import NavUser from "./NavUser/NavUser";
+import NavWrite from "../SellerHeader/NavWrite/NavWrite";
+import Logo from "../../../assets/logo.png";
 
 const Header = () => {
   return (
     <header className={style.header}>
       <nav>
-        <Link to="/" className={style.logo}>
+        <Link to="/sellerHome" className={style.logo}>
           <img src={Logo} alt="소담 로고" className={style.logoPng} />
         </Link>
       </nav>

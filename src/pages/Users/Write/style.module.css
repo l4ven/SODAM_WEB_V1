@@ -1,0 +1,92 @@
+.writeContainer {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Aligning content to the right */
+    padding-left: 50px;
+    /* Adding some space on the right */
+}
+
+.writeContainer>div {
+    padding-top: 100px;
+}
+
+.title {
+    font-size: 24px;
+}
+
+.dateContainer {
+    width: 308px;
+    height: 69px;
+    display: flex;
+    border: 1px solid #ccc;
+}
+
+.dateTitle {
+    width: 100px;
+    height: 69px;
+    background-color: #f1f1f1;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.inputContainer {
+    width: 308px;
+    height: 69px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputContainer>input {
+    width: 142px;
+    height: 36px;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    padding-left: 10px;
+}
+
+textarea {
+    width: 1120px;
+    height: 280px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding: 10px 10px;
+    margin-top: 30px;
+}
+
+.radioContainer {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+}
+
+.radio {
+    margin-left: 30px;
+}
+
+.choiceContainer>p {
+    font-size: 16px;
+    color: #949494;
+    margin-top: 10px;
+}
+
+.choiceContainer>button {
+    width: 140px;
+    height: 54px;
+    background-color: #f3fcf3;
+    color: #1e7b1e;
+    border: 1px solid #1e7b1e;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked {
+    background-color: #1e7b1e;
+    border: 3px solid #1e7b1e;
+}
