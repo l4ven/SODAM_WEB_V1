@@ -79,6 +79,10 @@ const SignUp = () => {
               className={style.inputField}
             />
           </div>
+          <div>
+            <p>개업일자</p>
+            <input type="date" className={style.inputField} />
+          </div>
           <button type="submit" className={style.signUpBtn}>
             회원가입
           </button>
