@@ -1,19 +1,19 @@
-import React, { useState } from "react";
-import style from "./style.module.css";
-import Header from "../../../../components/Header/SellerHeader/Header";
-import Aside from "./Aside/Aside";
-import { MdFileUpload } from "react-icons/md";
+import React, { useState } from 'react';
+import style from './style.module.css';
+import Header from '../../../../components/Header/SellerHeader/Header';
+import Aside from './Aside/Aside';
+import { MdFileUpload } from 'react-icons/md';
 
 const MyPage = () => {
-  const [activeSection, setActiveSection] = useState("home");
+  const [activeSection, setActiveSection] = useState('home');
   const [selectedFile, setSelectedFile] = useState(null);
   const [previewUrl, setPreviewUrl] = useState(null);
 
-  const handleFileChange = (event) => {
+  const handleFileChange = event => {
     const file = event.target.files[0];
     setSelectedFile(file);
 
-    if (file && file.type.startsWith("image/")) {
+    if (file && file.type.startsWith('image/')) {
       const url = URL.createObjectURL(file);
       setPreviewUrl(url);
     } else {
@@ -23,7 +23,7 @@ const MyPage = () => {
 
   const renderContent = () => {
     switch (activeSection) {
-      case "home":
+      case 'home':
         return (
           <div className={style.menu}>
             <h1>마이샵 홈</h1>
@@ -32,7 +32,7 @@ const MyPage = () => {
             </div>
           </div>
         );
-      case "product-registration":
+      case 'product-registration':
         return (
           <div className={style.menu}>
             <h1>상품등록</h1>
@@ -41,35 +41,31 @@ const MyPage = () => {
                 <div className={style.dateContainer}>
                   <div className={style.dateTitle}>카테고리</div>
                   <div className={style.inputContainer}>
-                    <select name="category" className={style.option}>
-                      <option value="">전체</option>
-                      <option value="category1">청과</option>
-                      <option value="category2">축산</option>
-                      <option value="category3">양곡</option>
+                    <select name='category' className={style.option}>
+                      <option value=''>전체</option>
+                      <option value='category1'>청과</option>
+                      <option value='category2'>축산</option>
+                      <option value='category3'>양곡</option>
                     </select>
                   </div>
                 </div>
                 <div className={style.dateContainer}>
                   <div className={style.dateTitle}>상품명</div>
                   <div className={style.inputContainer}>
-                    <input type="text" name="productName" />
+                    <input type='text' name='productName' />
                   </div>
                 </div>
                 <div className={style.dateContainer}>
                   <div className={style.dateTitle}>희망단가</div>
                   <div className={style.inputContainer}>
-                    <input type="text" name="price" />
+                    <input type='text' name='price' />
                     &nbsp; 원
                   </div>
                 </div>
                 <div className={style.fileSection}>
-                  <label htmlFor="fileInput" className={style.fileButton}>
+                  <label htmlFor='fileInput' className={style.fileButton}>
                     {previewUrl ? (
-                      <img
-                        src={previewUrl}
-                        alt="미리보기"
-                        className={style.previewImage}
-                      />
+                      <img src={previewUrl} alt='미리보기' className={style.previewImage} />
                     ) : (
                       <span className={style.fileButtonIcon}>
                         <MdFileUpload className={style.fileImg} /> <br />
@@ -77,58 +73,56 @@ const MyPage = () => {
                       </span>
                     )}
                     <input
-                      type="file"
-                      id="fileInput"
+                      type='file'
+                      id='fileInput'
                       className={style.fileInput}
                       onChange={handleFileChange}
-                      accept="image/*"
+                      accept='image/*'
                     />
                   </label>
-                  <div className={style.fileName}>
-                    {selectedFile ? selectedFile.name : "파일을 선택하세요"}
-                  </div>
+                  <div className={style.fileName}>{selectedFile ? selectedFile.name : '파일을 선택하세요'}</div>
                 </div>
               </div>
-              <button type="submit" className={style.submitButton}>
+              <button type='submit' className={style.submitButton}>
                 등록하기
               </button>
             </form>
           </div>
         );
-      case "inventory-management":
+      case 'inventory-management':
         return (
           <div className={style.menu}>
             <h1>재고관리</h1>
-            <form action="">
+            <form action=''>
               <div className={style.inventoryInputSection}>
                 <div className={style.inventoryDateContainer}>
                   <div className={style.inventoryDateTitle}>카테고리</div>
                   <div className={style.inventoryInputContainer}>
-                    <select name="category" className={style.inventoryOption}>
-                      <option value="">전체</option>
-                      <option value="category1">청과</option>
-                      <option value="category2">축산</option>
-                      <option value="category3">양곡</option>
+                    <select name='category' className={style.inventoryOption}>
+                      <option value=''>전체</option>
+                      <option value='category1'>청과</option>
+                      <option value='category2'>축산</option>
+                      <option value='category3'>양곡</option>
                     </select>
                   </div>
                 </div>
                 <div className={style.inventoryDateContainer}>
                   <div className={style.inventoryDateTitle}>상품명</div>
                   <div className={style.inventoryInputContainer}>
-                    <input type="text" name="productName" />
+                    <input type='text' name='productName' />
                   </div>
                 </div>
               </div>
               <div className={style.inventoryDateContainer}>
                 <div className={style.inventoryDateTitle}>등록기간</div>
                 <div className={style.inventoryInputContainer}>
-                  <input type="date" name="startDate" />
+                  <input type='date' name='startDate' />
                   &nbsp;~&nbsp;
-                  <input type="date" name="endDate" />
+                  <input type='date' name='endDate' />
                 </div>
               </div>
               <div className={style.btnContainer}>
-                <button type="submit" className={style.inventorySubmitButton}>
+                <button type='submit' className={style.inventorySubmitButton}>
                   검색
                 </button>
                 <button className={style.inventorySetButton}>초기화</button>
@@ -136,23 +130,23 @@ const MyPage = () => {
             </form>
           </div>
         );
-      case "returns-exchange":
+      case 'returns-exchange':
         return (
           <div className={style.menu}>
             <h1>반품/교환 내역</h1>
           </div>
         );
-      case "settlement":
+      case 'settlement':
         return (
           <div className={style.menu}>
             <h1>정산관리</h1>
-            <form action="">
+            <form action=''>
               <div className={style.inventoryDateContainer}>
                 <div className={style.inventoryDateTitle}>기준일</div>
                 <div className={style.inventoryInputContainer}>
-                  <input type="date" name="startDate" />
+                  <input type='date' name='startDate' />
                   &nbsp;~&nbsp;
-                  <input type="date" name="endDate" />
+                  <input type='date' name='endDate' />
                 </div>
               </div>
               <div className={style.inventoryDateContainer}>
@@ -164,11 +158,11 @@ const MyPage = () => {
             </form>
           </div>
         );
-      case "profile":
+      case 'profile':
         return (
           <div className={style.menu}>
-            <form action="">
-              <button type="submit" className={style.inventorySubmitButton}>
+            <form action=''>
+              <button type='submit' className={style.inventorySubmitButton}>
                 로그아웃
               </button>
             </form>

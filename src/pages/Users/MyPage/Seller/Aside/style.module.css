@@ -1,46 +1,46 @@
 h1 {
-    text-align: left;
-    font-size: 35px;
-    font-weight: 400;
+  text-align: left;
+  font-size: 35px;
+  font-weight: 400;
 }
 
 .menuContainer {
-    width: 240px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    line-height: 1rem;
+  width: 240px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  line-height: 1rem;
 }
 
 .menuBox {
-    width: 240px;
-    height: 60px;
-    border-bottom: 1px solid #d9d9d9;
-    font-size: 1rem;
-    display: flex;
-    align-items: center;
+  width: 240px;
+  height: 60px;
+  border-bottom: 1px solid #d9d9d9;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
 }
 
-.menuBox>* {
-    text-decoration-line: none;
+.menuBox > * {
+  text-decoration-line: none;
 }
 
 .menu {
-    margin-left: -10px;
-    padding-left: 10px;
-    display: flex;
-    align-items: center;
-    width: 250px;
-    height: 40px;
-    border-radius: 8px;
-    text-decoration: none;
-    color: black;
+  margin-left: -10px;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  width: 250px;
+  height: 40px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: black;
 }
 
 .menu:hover {
-    text-decoration: none;
-    background-color: #1fad1f;
-    color: #fff;
+  text-decoration: none;
+  background-color: #1fad1f;
+  color: #fff;
 }
